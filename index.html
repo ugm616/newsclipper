@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Clipping Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>News Clipping Simulator</h1>
+            <button id="mode-switch">Switch to Light Mode</button>
+        </header>
+        <main>
+            <section class="controls">
+                <label for="newspaper-select">Select Newspaper:</label>
+                <select id="newspaper-select">
+                    <option value="local">Local Newspaper</option>
+                    <option value="national">National Newspaper</option>
+                </select>
+
+                <label for="journalist-name">Journalist Name:</label>
+                <input type="text" id="journalist-name" placeholder="Enter journalist name">
+
+                <label for="article-type">Type of Article:</label>
+                <select id="article-type">
+                    <option value="front-page">Front Page</option>
+                    <option value="editorial">Editorial</option>
+                    <option value="small-article">Small Article</option>
+                </select>
+
+                <label for="article-text">Generated Text:</label>
+                <textarea id="article-text" placeholder="Enter article text"></textarea>
+
+                <label for="article-image">Upload Image:</label>
+                <input type="file" id="article-image">
+
+                <button id="generate-clipping">Generate News Clipping</button>
+            </section>
+            <section class="preview">
+                <div id="news-clipping">
+                    <!-- Generated news clipping will be displayed here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
